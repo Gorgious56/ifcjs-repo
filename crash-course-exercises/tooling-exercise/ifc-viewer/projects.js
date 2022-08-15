@@ -1,4 +1,5 @@
 export const projects = [];
+
 for (let i = 1; i < 11; i++) {
     projects.push({
         id: i,
