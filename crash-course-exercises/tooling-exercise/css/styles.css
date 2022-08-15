@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --background-element-light: #ffffff;
+    --background-element-heavy: #ffffff;
+    --hover-color: rgb(215, 238, 245);
+    --font-color: royalblue;
+    --font-color-heavy: rgb(50, 81, 173);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+    color: var(--font-color-heavy);
+}
+
+.flex-height{
+    display: block;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+}
