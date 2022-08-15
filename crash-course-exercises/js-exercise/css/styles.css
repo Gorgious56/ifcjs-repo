@@ -1,0 +1,75 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --background-element-light: #ffffff;
+    --background-element-heavy: #ffffff;
+    --hover-color: rgb(215, 238, 245);
+    --font-color: royalblue;
+    --font-color-heavy: rgb(50, 81, 173);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+    color: var(--font-color-heavy);
+}
+
+.model-list {
+    padding-left: 0;
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.model-list-item {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 2.5px solid var(--font-color);
+    border-radius: 0.25rem;
+    width: 8rem;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    /* https://stackoverflow.com/a/22218694/7092409 */
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.25s ease-in-out;
+
+    /* https://www.codegrepper.com/code-examples/html/how+to+set+link+as+normal+text+in+html */
+    text-decoration: none;
+    color: var(--font-color);
+
+    background-color: var(--background-element-light);
+
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.model-list-item:hover {
+    font-weight: bold;
+    background-color: var(--background-element-heavy);
+}
+
+/* https://stackoverflow.com/a/17489945/7092409 */
+.model-list-item:hover > .model-list-item-snapshot {
+    font-weight: bold;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.model-list-item-snapshot {
+    display: flex;
+    /* https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container */
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: all 0.25s ease-in-out;
+}

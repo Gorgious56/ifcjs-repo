@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Model View</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/button_style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    </head>
+    <body>
+        <h1>Model View</h1>
+        <ul class="button-span">
+            <!-- https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link -->
+            <button onclick="location.href='model-list.html'" type="button">
+                <span class="button_top">Back to List</span>
+            </button>
+            <button><span class="button_top">Edit</span></button>
+            <button><span class="button_top">Search</span></button>
+            <button><span class="button_top">Delete</span></button>
+        </ul>
+        <iframe
+            id="model-viewer-iframe"
+            style="width: 100vw; height: 100vh; overflow: hidden"
+            src="https://ifcjs.github.io/ifcjs-crash-course/sample-apps/02/"
+            frameborder="0"
+        >
+        </iframe>
+        <script src="model-viewer.js" type="module"></script>
+    </body>
+</html>

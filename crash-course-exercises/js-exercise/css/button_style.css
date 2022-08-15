@@ -1,0 +1,44 @@
+.button-span {
+    display: flex;
+    justify-content: center;
+}
+/* From uiverse.io by @Voxybuns */
+
+button {
+   --button_radius: 0.5rem;
+   --button_color: var(--background-element-light);
+   --button_outline_color: var(--font-color);
+   
+   font-size: 1.1rem;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+
+   background: var(--button_outline_color);
+
+   padding: 0;
+   margin:0.25rem;
+
+   width: 8rem;
+  }
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: all 0.1s ease;
+   
+   padding: 0.5rem 0.1rem;
+  }
+  
+  button:hover .button_top {
+   transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+   transform: translateY(0);
+  }
