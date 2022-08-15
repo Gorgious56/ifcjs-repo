@@ -1,6 +1,3 @@
 node_modules/
 .vs/
 **/**bundle.js
-crash-course-exercises/tooling-exercise/bundle.js
-crash-course-exercises/tooling-exercise/ifc-viewer/model-viewer-bundle.js
-crash-course-exercises/tooling-exercise/ifc-viewer/model-list-bundle.js
